@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/regexx/%{name}-%{version}.tar.gz
+# Source0-md5:	bc2116ddf4a70e130ae37138d9b414bc
 Patch0:		%{name}-sys-pcre.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
