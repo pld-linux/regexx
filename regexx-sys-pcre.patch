@@ -30,3 +30,15 @@ diff -urN regexx-0.97.org/src/Makefile.am regexx-0.97/src/Makefile.am
 +libregexx_la_LDFLAGS = -version-info 1:1:1
 +libregexx_la_LIBADD = -lpcre
  include_HEADERS = regexx.hh split.hh
+diff -urN regexx-0.97.org/src/regexx.cc regexx-0.97/src/regexx.cc
+--- regexx-0.97.org/src/regexx.cc	Tue May  6 13:53:23 2003
++++ regexx-0.97/src/regexx.cc	Tue May  6 14:00:44 2003
+@@ -27,7 +27,7 @@
+ // $Date$
+ 
+ #include "regexx.hh"
+-#include "../pcre/pcre.h"
++#include <pcre.h>
+ 
+ const unsigned int&
+ regexx::Regexx::exec(int _flags)
