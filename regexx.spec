@@ -1,12 +1,12 @@
 Summary:	Regexx - a complete Regular Expressions C++ solution
 Summary(pl):	Regexx - kompletne rozwi±zanie problemu wyra¿eñ regularnych w C++
 Name:		regexx
-Version:	0.98
+Version:	0.98.1
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/regexx/%{name}-%{version}.tar.gz
-# Source0-md5:	bc2116ddf4a70e130ae37138d9b414bc
+# Source0-md5:	a33aecd7bc0005e3a2c7fa946722b56c
 Patch0:		%{name}-sys-pcre.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
