@@ -1,0 +1,32 @@
+diff -urN regexx-0.97.org/Makefile.am regexx-0.97/Makefile.am
+--- regexx-0.97.org/Makefile.am	Tue May  6 13:53:23 2003
++++ regexx-0.97/Makefile.am	Tue May  6 13:53:41 2003
+@@ -4,5 +4,5 @@
+ ## $Date$
+ ##
+ 
+-SUBDIRS = pcre src examples
++SUBDIRS = src examples
+ EXTRA_DIST = regexx.spec.in
+diff -urN regexx-0.97.org/configure.in regexx-0.97/configure.in
+--- regexx-0.97.org/configure.in	Tue May  6 13:53:23 2003
++++ regexx-0.97/configure.in	Tue May  6 13:53:33 2003
+@@ -25,7 +25,4 @@
+ 
+ AC_OUTPUT([Makefile src/Makefile examples/Makefile regexx.spec])
+ 
+-cd pcre
+-./configure
+-cd ..
+ 
+diff -urN regexx-0.97.org/src/Makefile.am regexx-0.97/src/Makefile.am
+--- regexx-0.97.org/src/Makefile.am	Tue May  6 13:53:23 2003
++++ regexx-0.97/src/Makefile.am	Tue May  6 13:55:45 2003
+@@ -6,5 +6,6 @@
+ 
+ lib_LTLIBRARIES = libregexx.la
+ libregexx_la_SOURCES = regexx.cc regexx.hh split.cc split.hh
+-libregexx_la_LDFLAGS = -version-info 1:1:1 ../pcre/maketables.lo ../pcre/get.lo ../pcre/study.lo ../pcre/pcre.lo
++libregexx_la_LDFLAGS = -version-info 1:1:1
++libregexx_la_LIBADD = -lpcre
+ include_HEADERS = regexx.hh split.hh
