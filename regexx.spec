@@ -1,6 +1,6 @@
 Summary:	Regexx
 Name:		regexx
-Version:	0.97
+Version:	0.98
 Release:	1
 License:	GPL
 Group:		Libraries
@@ -69,6 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_includedir}/*.hh
+%{_libdir}/*.la
 
 %files static
 %defattr(644,root,root,755)
