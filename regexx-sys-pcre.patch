@@ -1,3 +1,41 @@
+--- regexx-0.98.1.orig/src/regexx.hh
++++ regexx-0.98.1/src/regexx.hh
+@@ -34,6 +34,7 @@
+ #include <split.hh>
+ 
+ namespace regexx {
++  using namespace std;
+ 
+   /** Class to store atoms.
+    *
+@@ -566,7 +567,7 @@
+   }
+ 
+   inline const std::string&
+-  Regexx::replacef(std::string (*_func)(const RegexxMatch&), int _flags = 0)
++  Regexx::replacef(std::string (*_func)(const RegexxMatch&), int _flags)
+     throw(CompileException)
+   {
+     exec(_flags&~nomatch);
+@@ -580,7 +581,7 @@
+   inline const std::string&
+   Regexx::replacef(const std::string& _expr,
+ 		   std::string (*_func)(const RegexxMatch&),
+-		   int _flags = 0)
++		   int _flags)
+     throw(CompileException)
+   {
+     expr(_expr);
+@@ -590,7 +591,7 @@
+   inline const std::string&
+   Regexx::replacef(const std::string& _str, const std::string& _expr,
+ 		   std::string (*_func)(const RegexxMatch&),
+-		   int _flags = 0)
++		   int _flags)
+     throw(CompileException)
+   {
+     str(_str);
+
 diff -urN regexx-0.98.org/Makefile.am regexx-0.98/Makefile.am
 --- regexx-0.98.org/Makefile.am	Tue May  6 14:07:02 2003
 +++ regexx-0.98/Makefile.am	Tue May  6 14:08:44 2003
