@@ -24,7 +24,7 @@ strings with strings or regular expressions.
 %description -l pl
 Regexx to kompletne rozwi±zanie problemu wyra¿eñ regularnych w C++. Ma
 zaimplementowane ³atwe wykonywanie wyra¿eñ, wyszukiwanie globalne,
-zamienê z podstawianiem elementów, konfigurowalne podstawienia, ³atwe
+zamianê z podstawianiem elementów, konfigurowalne podstawienia, ³atwe
 dopasowywanie i uzyskiwanie elementów ³añcuchów. Do biblioteki zosta³y
 do³±czone tak¿e funkcje do dzielenia ³añcuchów na podstawie ³añcuchów
 lub wyra¿eñ regularnych.
