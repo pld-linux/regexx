@@ -80,3 +80,25 @@ diff -urN regexx-0.98.org/src/regexx.cc regexx-0.98/src/regexx.cc
  
  const unsigned int&
  regexx::Regexx::exec(int _flags)
+diff -urN regexx-0.98.org/src/regexx.hh regexx-0.98/src/regexx.hh
+--- regexx-0.98.org/src/regexx.hh	Tue May  6 14:23:48 2003
++++ regexx-0.98/src/regexx.hh	Tue May  6 14:24:15 2003
+@@ -32,6 +32,7 @@
+ #include <string>
+ #include <vector>
+ #include <split.hh>
++#include <pcre.h>
+ 
+ namespace regexx {
+   using namespace std;
+@@ -502,8 +503,8 @@
+     unsigned int m_matches;
+     std::string m_replaced;
+ 
+-    void* m_preg;
+-    void* m_extra;
++    pcre* m_preg;
++    pcre_extra* m_extra;
+ 
+   };
+ 
