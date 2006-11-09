@@ -33,7 +33,7 @@ lub wyra¿eñ regularnych.
 Summary:	Regexx - development files
 Summary(pl):	Regexx - pliki dla programistów
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Regexx - development files.
@@ -45,7 +45,7 @@ Regexx - pliki dla programistów.
 Summary:	Static regexx library
 Summary(pl):	Statyczna biblioteka regexx
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static regexx library.
