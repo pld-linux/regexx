@@ -1,5 +1,5 @@
 Summary:	Regexx - a complete Regular Expressions C++ solution
-Summary(pl.UTF-8):   Regexx - kompletne rozwiązanie problemu wyrażeń regularnych w C++
+Summary(pl.UTF-8):	Regexx - kompletne rozwiązanie problemu wyrażeń regularnych w C++
 Name:		regexx
 Version:	0.98.1
 Release:	1
@@ -31,7 +31,7 @@ lub wyrażeń regularnych.
 
 %package devel
 Summary:	Regexx - development files
-Summary(pl.UTF-8):   Regexx - pliki dla programistów
+Summary(pl.UTF-8):	Regexx - pliki dla programistów
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -43,7 +43,7 @@ Regexx - pliki dla programistów.
 
 %package static
 Summary:	Static regexx library
-Summary(pl.UTF-8):   Statyczna biblioteka regexx
+Summary(pl.UTF-8):	Statyczna biblioteka regexx
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
