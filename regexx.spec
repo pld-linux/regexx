@@ -1,5 +1,5 @@
 Summary:	Regexx - a complete Regular Expressions C++ solution
-Summary(pl):	Regexx - kompletne rozwi±zanie problemu wyraøeÒ regularnych w C++
+Summary(pl.UTF-8):   Regexx - kompletne rozwiƒÖzanie problemu wyra≈ºe≈Ñ regularnych w C++
 Name:		regexx
 Version:	0.98.1
 Release:	1
@@ -21,36 +21,36 @@ substitution, customized replaces, easy match and atom strings
 retrieving. It's also included in the library functions to split
 strings with strings or regular expressions.
 
-%description -l pl
-Regexx to kompletne rozwi±zanie problemu wyraøeÒ regularnych w C++. Ma
-zaimplementowane ≥atwe wykonywanie wyraøeÒ, wyszukiwanie globalne,
-zamianÍ z podstawianiem elementÛw, konfigurowalne podstawienia, ≥atwe
-dopasowywanie i uzyskiwanie elementÛw ≥aÒcuchÛw. Do biblioteki zosta≥y
-do≥±czone takøe funkcje do dzielenia ≥aÒcuchÛw na podstawie ≥aÒcuchÛw
-lub wyraøeÒ regularnych.
+%description -l pl.UTF-8
+Regexx to kompletne rozwiƒÖzanie problemu wyra≈ºe≈Ñ regularnych w C++. Ma
+zaimplementowane ≈Çatwe wykonywanie wyra≈ºe≈Ñ, wyszukiwanie globalne,
+zamianƒô z podstawianiem element√≥w, konfigurowalne podstawienia, ≈Çatwe
+dopasowywanie i uzyskiwanie element√≥w ≈Ça≈Ñcuch√≥w. Do biblioteki zosta≈Çy
+do≈ÇƒÖczone tak≈ºe funkcje do dzielenia ≈Ça≈Ñcuch√≥w na podstawie ≈Ça≈Ñcuch√≥w
+lub wyra≈ºe≈Ñ regularnych.
 
 %package devel
 Summary:	Regexx - development files
-Summary(pl):	Regexx - pliki dla programistÛw
+Summary(pl.UTF-8):   Regexx - pliki dla programist√≥w
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Regexx - development files.
 
-%description devel -l pl
-Regexx - pliki dla programistÛw.
+%description devel -l pl.UTF-8
+Regexx - pliki dla programist√≥w.
 
 %package static
 Summary:	Static regexx library
-Summary(pl):	Statyczna biblioteka regexx
+Summary(pl.UTF-8):   Statyczna biblioteka regexx
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static regexx library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka regexx.
 
 %prep
